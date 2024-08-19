@@ -23,6 +23,7 @@ test.describe('Assertion in UI Testing', async () => {
 
 
     await eleInsideTheIframe.fill("hi takhir");
+    await page.waitForTimeout(7000);
     await expect(eleInsideTheIframe).toHaveText("hi takhir");
    
     console.log("hi "+ await eleInsideTheIframe.innerText());
