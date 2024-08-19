@@ -22,8 +22,8 @@ test.describe('Assertion in UI Testing', async () => {
     //await eleInsideTheIframe.type("hi takhir"); //it types inside input text by text
 
 
-    await eleInsideTheIframe.fill("hi takhir");
-    await expect(eleInsideTheIframe).toHaveText("hi takhir");
+    await eleInsideTheIframe.fill("Hello World!");
+    await expect(eleInsideTheIframe).toHaveText("Hello World!");
    
     console.log("hi "+ await eleInsideTheIframe.innerText());
     
